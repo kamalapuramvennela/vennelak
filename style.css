@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    outline: none;
+}
+
+input:focus, button:focus {
+    box-shadow: 0 0 0 2px hsla(324, 20%, 95%, 0.995); /*  outline for focus */
+}
+
+button {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Login Form Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.login-form {
+    background-color: rgba(9, 255, 255, 0.7); /* Semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(243, 237, 237, 0.967); /* Soft shadow */
+    max-width: 300px; /* Limit the width */
+    text-align: center;
+}
+
+.login-form label {
+    color: #e7dbdbfa; /* Dark gray for labels */
+}
+
+.login-form input {
+    color: #e7e2e2; /* Dark gray for input text */
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form input::placeholder {
+    color: #f5f0f0; /* Light gray for placeholder text */
+}
+
+.login-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #eae0e6f7;
+    color: white;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #ebe0e6; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .login-form {
+        padding: 20px;
+    }
+}
